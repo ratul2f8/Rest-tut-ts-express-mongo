@@ -1,0 +1,20 @@
+*****************
+Install dependencies:
+yarn add express yup config cors express mongoose pino pino-pretty dayjs bcrypt jsonwebtoken lodash nanoid
+
+yarn add @types/body-parser @types/config @types/cors @types/express @types/node @types/yup @types/pino @types/mongoose @types/bcrypt @types/jsonwebtoken @types/lodash @types/nanoid ts-node typescript -D
+*****************
+Initialize typescript:
+
+tsc --init
+
+***************
+Create nodemon configuration file:
+touch nodemon.json
+
+than, copy paste the following json:
+
+*****add the dev script
+"scripts":{
+    "dev": "nodemon --config nodemon.json src/app.ts"
+}
